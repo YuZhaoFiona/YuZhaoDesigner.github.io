@@ -7,7 +7,7 @@
 
  :root {
     --Primary_green: #1D4130;
-    --Primary_black: #000000;
+    --Primary_black: #333333;
     --Primary_white: #F7F7F7;
     --Primary_warm_white: #F0EEE7;
     --Secondary_blue: #2759BD;
@@ -537,7 +537,7 @@ footer a {
 }
 
 .process_icons {
-    max-width: 60px;
+    max-width: 40px;
 }
 
 .line {
