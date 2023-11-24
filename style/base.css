@@ -1,0 +1,55 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+#menu {
+    display: flex;
+    padding: 3px;
+    background-color: blue;
+    border-radius: 24px;
+}
+
+#logo {
+    height: 40px;
+}
+
+#linkedin {
+    height: 40px;
+}
+
+.menu-item {
+    padding: 10px 30px 10px 30px;
+    margin: auto;
+    background-color: red;
+    border-radius: 20px;
+}
+
+.menu-item:hover {
+    background: #1D4130;
+}
+
+.temp {
+    background-color: orange;
+    height: 30px;
+    margin: 30px;
+}
+
+
+/* MAIN */
+
+main {
+    height: 1200px;
+    /* temporary */
+}
+
+
+/* FOOTER */
+
+footer {
+    background-color: blue;
+    /* temporary */
+    height: 300px;
+    z-index: -1;
+}
