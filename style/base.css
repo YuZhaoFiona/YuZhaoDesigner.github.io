@@ -105,7 +105,7 @@ footer {
 }
 
 #footer-title span {
-    font-size: 40px;
+    font-size: 2.5rem;
     font-family: Montserrat;
     font-weight: 300;
     line-height: 130%;
@@ -210,7 +210,7 @@ footer {
     }
     .menu-item a {
         color: var(--Secondary_grey);
-        font-size: 18px;
+        font-size: 1.125rem;
         font-family: Hind Madurai;
         font-weight: 400;
         line-height: 27px;
@@ -222,6 +222,38 @@ footer {
     }
     #current {
         color: var(--Primary_black);
+    }
+    footer {
+        padding: 40px;
+    }
+    #footer-main {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    #footer-links {
+        flex-direction: row;
+    }
+    #footer-title span {
+        font-size: 5rem;
+    }
+    #footer-location {
+        font-size: 1.75rem;
+    }
+    #footer-contact {
+        gap: 40px;
+    }
+    #footer-end {
+        font-size: 0.875rem;
+        padding-top: 4px;
+        border-top: 2px var(--Primary_warm_white) solid;
+    }
+    .secondary-button {
+        font-size: 1.25rem;
+        line-height: 24px;
+        padding: 24px 48px;
+        border-radius: 100px;
+        border: 2px var(--Primary_warm_white) solid;
+        color: var(--Primary_warm_white);
     }
 }
 
