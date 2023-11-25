@@ -17,17 +17,29 @@
 }
 
 .nav-open {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     position: absolute;
     z-index: 2;
-    display: block;
     text-align: center;
-    background-color: orange;
+    background-color: white;
     width: 100%;
     height: 100%;
 }
 
 .no-scroll {
     overflow: hidden;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+#logo {
+    height: 40px;
 }
 
 
@@ -61,20 +73,11 @@
     .temp {
         background-color: orange;
         height: 30px;
-        /* margin: 30px; */
-
-
-}
-footer {
-    /* margin-top: 60px; */
-    
-    background-color: blue;
-    /* temporary */
-    
-    height: 300px;
-    position: relative;
-    z-index: -1;
-}
-
-}
-*/
+    }
+    footer {
+        background-color: blue;
+        height: 300px;
+        position: relative;
+        z-index: -1;
+    }
+} */
