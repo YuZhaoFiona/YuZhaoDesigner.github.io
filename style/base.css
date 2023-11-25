@@ -5,6 +5,10 @@
     /* outline: 1px solid red; */
 }
 
+body {
+    background-color: var(--Primary_white);
+}
+
 :root {
     --Primary_green: #1D4130;
     --Primary_black: #000000;
@@ -67,7 +71,7 @@ h3 {
 header {
     display: flex;
     justify-content: space-between;
-    padding: 10px;
+    padding: 24px;
 }
 
 #logo {
@@ -80,7 +84,8 @@ a:link {
 
 @media screen and (min-width: 768px) {
     header {
-        padding: 20px;
+        padding: 40px 80px;
+        align-items: center;
     }
     #nav-icon {
         display: none;
@@ -88,14 +93,12 @@ a:link {
     #linkedin {
         display: inline;
     }
-    #menu-container {
-        display: none;
-    }
     #menu {
         display: flex;
         padding: 3px;
-        background-color: blue;
-        border-radius: 24px;
+        background-color: var(--Primary_white);
+        box-shadow: 0px 2px 4px rgba(220.97, 219.81, 219.81, 0.5);
+        border-radius: 100px;
     }
     #logo {
         height: 40px;
@@ -107,11 +110,27 @@ a:link {
         display: block;
         padding: 10px 30px 10px 30px;
         margin: auto;
-        background-color: red;
-        border-radius: 20px;
+        width: 80px;
+        text-align: center;
+        border-radius: 100px;
     }
     .menu-item:hover {
-        background: #1D4130;
+        background-color: var(--Primary_green);
+    }
+    .menu-item a {
+        color: var(--Secondary_grey);
+        font-size: 18px;
+        font-family: Hind Madurai;
+        font-weight: 400;
+        line-height: 27px;
+        word-wrap: break-word
+    }
+    .menu-item:hover a,
+    .menu-item:hover #current {
+        color: var(--Primary_warm_white);
+    }
+    #current {
+        color: var(--Primary_black);
     }
     .temp {
         background-color: orange;
