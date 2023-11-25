@@ -5,7 +5,10 @@
     /* outline: 1px solid red; */
 }
 
-body {
+body,
+main,
+header,
+ul {
     background-color: var(--Primary_white);
 }
 
@@ -44,7 +47,6 @@ h3 {
     position: absolute;
     z-index: 2;
     text-align: center;
-    background-color: white;
     width: 100%;
     height: 100%;
     gap: 4rem;
@@ -82,9 +84,98 @@ a:link {
     text-decoration: none;
 }
 
+footer {
+    background-color: var(--Primary_green);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+}
+
+#footer-main {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+#footer-contact {
+    display: flex;
+    gap: 24px;
+    flex-direction: column;
+}
+
+#footer-title span {
+    font-size: 40px;
+    font-family: Montserrat;
+    font-weight: 300;
+    line-height: 130%;
+    word-wrap: break-word;
+    color: var(--Primary_warm_white);
+}
+
+#footer-title span.bold {
+    font-weight: 600;
+}
+
+#footer-location {
+    font-size: 1.125rem;
+    font-family: Montserrat;
+    font-weight: 600;
+    line-height: 36.40px;
+    word-wrap: break-word;
+    color: var(--Primary_warm_white)
+}
+
+#footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+#footer-logo {
+    object-fit: contain;
+    display: flex;
+    align-self: center;
+    max-width: 60%;
+}
+
+#footer-body {
+    text-align: center;
+}
+
+#footer-end {
+    color: var(--Primary_warm_white);
+    font-size: 0.6rem;
+    font-weight: 300;
+    line-height: 21px;
+    border-top: 1px var(--Primary_warm_white) solid;
+    margin-top: 48px;
+}
+
+.secondary-button {
+    text-align: center;
+    font-size: 1.125rem;
+    font-family: Montserrat;
+    font-weight: 600;
+    line-height: 24px;
+    padding: 12px 20px;
+    border-radius: 100px;
+    border: 1px var(--Primary_warm_white) solid;
+    color: var(--Primary_warm_white);
+}
+
+.secondary-button:hover,
+.secondary-button:active {
+    background-color: var(--Primary_warm_white);
+    color: var(--Primary_green);
+}
+
+
+/* MEDIUM SIZE SCREENS */
+
 @media screen and (min-width: 768px) {
     header {
-        padding: 40px 80px;
+        padding: 40px 40px;
         align-items: center;
     }
     #nav-icon {
@@ -132,14 +223,13 @@ a:link {
     #current {
         color: var(--Primary_black);
     }
-    .temp {
-        background-color: orange;
-        height: 30px;
-    }
-    footer {
-        background-color: blue;
-        height: 300px;
-        position: relative;
-        z-index: -1;
+}
+
+
+/* LARGE SIZE SCREENS */
+
+@media only screen and (min-width: 992px) {
+    header {
+        padding: 40px 80px;
     }
 }
