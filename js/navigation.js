@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const burger = document.getElementById("nav-icon")
     burger.onclick = function() {
         console.log("click")
-        const navSection = document.getElementById("menu")
+        const navSection = document.getElementById("menu-mobile")
         navSection.classList.contains("nav-open") ?
             closeMenu(burger, navSection) :
             openMenu(burger, navSection)
