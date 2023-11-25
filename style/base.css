@@ -33,23 +33,20 @@ header {
 .temp {
     background-color: orange;
     height: 30px;
-    margin: 30px;
+    /* margin: 30px; */
 }
 
 
 /* MAIN */
 
-main {
-    height: 1200px;
-    /* temporary */
-}
-
 
 /* FOOTER */
 
 footer {
+    /* margin-top: 60px; */
     background-color: blue;
     /* temporary */
     height: 300px;
+    position: relative;
     z-index: -1;
 }
