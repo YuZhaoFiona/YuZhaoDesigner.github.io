@@ -286,9 +286,6 @@ footer {
         font-size: 1.25rem;
         border-radius: 100px;
     }
-    p {
-        font-size: 1.25rem;
-    }
 }
 
 
@@ -307,9 +304,6 @@ footer {
     }
     #footer-end {
         margin-top: 80px;
-    }
-    p {
-        font-size: 1.5rem;
     }
 }
 

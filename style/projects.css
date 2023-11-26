@@ -51,6 +51,7 @@
     @media screen and (min-width: 768px) {
         .project-summary {
             align-items: flex-start;
+            gap: 32px;
         }
         .project-title {
             font-size: 2rem;
@@ -94,5 +95,18 @@
     @media only screen and (min-width: 1200px) {
         .project-title {
             font-size: 2rem;
+        }
+        #animated-hero {
+            aspect-ratio: 1.5;
+        }
+        .project-container {
+            gap: 120px;
+        }
+        .project-thumbnail {
+            max-width: 600px;
+        }
+        .project-summary {
+            flex-grow: 1;
+            max-width: 600px;
         }
     }
