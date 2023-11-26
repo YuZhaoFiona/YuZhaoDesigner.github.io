@@ -1,5 +1,5 @@
 h1 {
-    font-size: 3.75rem;
+    font-size: 3rem;
     color: var(--Primary_green);
     line-height: 130%;
 }
@@ -7,26 +7,23 @@ h1 {
 #hero-section {
     display: flex;
     flex-direction: column-reverse;
-    padding: 0px 20px 0px 20px;
     align-items: center;
-}
-
-#animated-hero {
-    display: flex;
-    aspect-ratio: 1;
-    background-color: var(--Primary_green);
     width: 80vw;
 }
 
-#hero-text {
-    padding: 80px 0px;
+#animated-hero {
+    /*temporary*/
+    width: 80vw;
+    display: flex;
+    aspect-ratio: 1;
+    background-color: var(--Primary_green);
 }
 
-main {
+#hero-text {
+    padding: 40px 0px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 40px;
+    gap: 24px;
 }
 
 .project-container {
@@ -52,14 +49,5 @@ main {
     font-family: Montserrat;
     font-weight: 600;
     line-height: 36.40px;
-    word-wrap: break-word
-}
-
-.project-description {
-    color: var(--Primary_black);
-    font-size: 1.125rem;
-    font-family: Hind Madurai;
-    font-weight: 400;
-    line-height: 27px;
     word-wrap: break-word
 }
