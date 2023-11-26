@@ -1,0 +1,23 @@
+h1 {
+    font-size: 3.75rem;
+    color: var(--Primary_green);
+    line-height: 130%;
+}
+
+#hero-section {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 0px 20px 0px 20px;
+    align-items: center;
+}
+
+#animated-hero {
+    display: flex;
+    aspect-ratio: 1;
+    background-color: var(--Primary_green);
+    width: 80vw;
+}
+
+#hero-text {
+    padding: 80px 0px;
+}
