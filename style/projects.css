@@ -1,5 +1,5 @@
     h1 {
-        font-size: 3rem;
+        font-size: 2rem;
         color: var(--Primary_green);
     }
     
@@ -7,15 +7,12 @@
         display: flex;
         flex-direction: column-reverse;
         align-items: center;
-        width: 80vw;
+        padding: 24px;
     }
     
     #animated-hero {
         /*temporary*/
-        width: 80vw;
         display: flex;
-        aspect-ratio: 1;
-        background-color: var(--Primary_green);
     }
     
     #hero-text {
@@ -26,10 +23,10 @@
     }
     
     .project-container {
+        padding: 24px;
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 80vw;
     }
     
     .project-thumbnail {
@@ -58,20 +55,36 @@
         .project-title {
             font-size: 2rem;
         }
+        .project-container {
+            padding: 40px;
+        }
+        #hero-section {
+            padding: 40px;
+        }
+        #animated-hero {
+            aspect-ratio: 2;
+        }
     }
     
     @media only screen and (min-width: 992px) {
         #hero-section {
             flex-direction: row;
-            gap: 32px;
+            padding: 0 80px;
+        }
+        #hero-text {
+            flex-basis: 30%;
+        }
+        #animated-hero {
+            flex-basis: 70%;
+            aspect-ratio: 1;
         }
         .project-container {
             flex-direction: row;
-            width: 70vw;
-            gap: 120px;
+            padding: 40px 80px;
+            gap: 60px;
         }
         .project-thumbnail {
-            max-width: 40%;
+            max-width: 50%;
         }
         .project-summary {
             flex-grow: 1;
