@@ -206,6 +206,12 @@ footer {
     color: var(--Primary_warm_white);
 }
 
+.text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
 
 /* MEDIUM SIZE SCREENS */
 
