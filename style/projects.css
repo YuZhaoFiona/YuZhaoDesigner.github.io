@@ -33,7 +33,8 @@
     }
     
     .project-thumbnail {
-        max-width: 80vw;
+        display: block;
+        max-width: 100%;
     }
     
     .project-summary {
@@ -54,6 +55,30 @@
         .project-summary {
             align-items: flex-start;
         }
+        .project-title {
+            font-size: 2rem;
+        }
+    }
+    
+    @media only screen and (min-width: 992px) {
+        #hero-section {
+            flex-direction: row;
+            gap: 32px;
+        }
+        .project-container {
+            flex-direction: row;
+            width: 70vw;
+            gap: 120px;
+        }
+        .project-thumbnail {
+            max-width: 40%;
+        }
+        .project-summary {
+            flex-grow: 1;
+        }
+    }
+    
+    @media only screen and (min-width: 1200px) {
         .project-title {
             font-size: 2rem;
         }

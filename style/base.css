@@ -305,6 +305,9 @@ footer {
     #footer-end {
         margin-top: 80px;
     }
+    p {
+        font-size: 1.5rem;
+    }
 }
 
 @media only screen and (min-width: 1200px) {
