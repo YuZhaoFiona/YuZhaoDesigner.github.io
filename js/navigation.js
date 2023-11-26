@@ -1,4 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
+    if (window.innerWidth >= 768) return; // Don't do anything on larger screens
+
     const burger = document.getElementById("nav-icon")
     burger.onclick = function() {
         console.log("click")

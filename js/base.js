@@ -21,8 +21,10 @@ function distanceToBottom() {
 
 
 document.addEventListener('DOMContentLoaded', function() {
-    headerAnimation(0.5, 'header');
-    footerAnimation(-0.5, 'footer', distanceToBottom);
+    if (window.innerWidth >= 768) {
+        headerAnimation(0.5, 'header');
+        footerAnimation(-0.5, 'footer', distanceToBottom);
+    }
 });
 
 /**

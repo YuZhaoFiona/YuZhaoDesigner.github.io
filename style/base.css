@@ -152,7 +152,7 @@ footer {
     margin-top: 48px;
 }
 
-.secondary-button {
+.button {
     text-align: center;
     font-size: 1.125rem;
     font-family: Montserrat;
@@ -160,6 +160,9 @@ footer {
     line-height: 24px;
     padding: 12px 20px;
     border-radius: 100px;
+}
+
+.secondary-button {
     border: 1.6px var(--Primary_warm_white) solid;
     color: var(--Primary_warm_white);
 }
@@ -168,6 +171,18 @@ footer {
 .secondary-button:active {
     background-color: var(--Primary_warm_white);
     color: var(--Primary_green);
+}
+
+.primary-button {
+    background-color: var(--Primary_warm_white);
+    border: 1.6px var(--Primary_green) solid;
+    color: var(--Primary_green);
+}
+
+.primary-button:hover,
+.primary-button:active {
+    background-color: var(--Primary_green);
+    color: var(--Primary_warm_white);
 }
 
 
@@ -247,7 +262,7 @@ footer {
         font-size: 0.875rem;
         padding-top: 4px;
     }
-    .secondary-button {
+    .button {
         font-size: 1.25rem;
         line-height: 24px;
         border-radius: 100px;
@@ -278,7 +293,7 @@ footer {
     #footer-title span {
         font-size: 5rem;
     }
-    .secondary-button {
+    .button {
         padding: 24px 48px;
     }
     #footer-location {
