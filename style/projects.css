@@ -1,53 +1,60 @@
-h1 {
-    font-size: 3rem;
-    color: var(--Primary_green);
-    line-height: 130%;
-}
-
-#hero-section {
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-    width: 80vw;
-}
-
-#animated-hero {
-    /*temporary*/
-    width: 80vw;
-    display: flex;
-    aspect-ratio: 1;
-    background-color: var(--Primary_green);
-}
-
-#hero-text {
-    padding: 40px 0px;
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-}
-
-.project-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 80vw;
-}
-
-.project-thumbnail {
-    max-width: 80vw;
-}
-
-.project-summary {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-}
-
-.project-title {
-    color: var(--Primary_green);
-    font-size: 1.75rem;
-    font-family: Montserrat;
-    font-weight: 600;
-    line-height: 36.40px;
-    word-wrap: break-word
-}
+    h1 {
+        font-size: 3rem;
+        color: var(--Primary_green);
+    }
+    
+    #hero-section {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        width: 80vw;
+    }
+    
+    #animated-hero {
+        /*temporary*/
+        width: 80vw;
+        display: flex;
+        aspect-ratio: 1;
+        background-color: var(--Primary_green);
+    }
+    
+    #hero-text {
+        padding: 40px 0px;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+    
+    .project-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80vw;
+    }
+    
+    .project-thumbnail {
+        max-width: 80vw;
+    }
+    
+    .project-summary {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+    
+    .project-title {
+        color: var(--Primary_green);
+        font-size: 1.75rem;
+        font-family: Montserrat;
+        font-weight: 600;
+        word-wrap: break-word
+    }
+    
+    @media screen and (min-width: 768px) {
+        .project-summary {
+            align-items: flex-start;
+        }
+        .project-title {
+            font-size: 2rem;
+        }
+    }
