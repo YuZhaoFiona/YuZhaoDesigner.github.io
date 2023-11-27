@@ -212,6 +212,13 @@ footer {
     gap: 16px;
 }
 
+iframe {
+    flex-basis: 100%;
+    margin: 0 24px;
+    height: auto;
+    aspect-ratio: 1.78;
+}
+
 
 /* MEDIUM SIZE SCREENS */
 
