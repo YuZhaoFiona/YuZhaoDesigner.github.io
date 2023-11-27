@@ -1,0 +1,121 @@
+.about-container {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    padding: 24px;
+}
+
+.about-img {
+    max-width: 100%;
+    height: auto;
+}
+
+.about-title {
+    font-size: 1.75rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: var(--Primary_green);
+}
+
+.about-summary {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: flex-start;
+    flex-grow: 1;
+}
+
+.value-container {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    padding: 80px 24px;
+}
+
+.valuebox-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.value-box {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    border: 1.6px var(--Primary_green) solid;
+    border-radius: 32px;
+    padding: 48px 24px;
+}
+
+.value-box:hover {
+    color: var(--Primary_warm_white);
+    background-color: var(--Primary_green);
+}
+
+.value-box:hover p {
+    color: var(--Primary_warm_white);
+}
+
+.about-subtitle {
+    font-size: 1.25rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+@media screen and (min-width: 768px) {
+    .about-container {
+        padding: 24px 40px;
+    }
+    .value-container {
+        padding: 80px 40px;
+    }
+    .value-box {
+        padding: 48px 32px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .about-container {
+        padding: 24px 80px;
+    }
+    .value-container {
+        padding: 80px;
+    }
+    .value-box {
+        padding: 48px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .about-container {
+        flex-direction: row-reverse;
+        gap: 180px;
+        padding: 24px 80px;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .about-img {
+        max-width: 600px;
+    }
+    .about-summary {
+        max-width: 600px;
+    }
+    .about-title {
+        font-size: 3rem;
+    }
+    .about-subtitle {
+        font-size: 1.75rem;
+    }
+    .value-container {
+        padding: 160px 80px;
+        gap: 80px;
+    }
+    .valuebox-container {
+        flex-direction: row;
+        gap: 40px;
+    }
+    .value-box {
+        /* max-width: 400px; */
+        flex-basis: 33%;
+    }
+}
