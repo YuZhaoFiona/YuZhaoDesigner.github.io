@@ -90,13 +90,10 @@
         .project-summary {
             flex-basis: 40%;
         }
-        .project-thumbnail img {
-            display: block;
-            height: auto;
+        .project-thumbnail {
             transition: transform 800ms ease-in-out;
-            will-change: transform;
         }
-        .project-thumbnail:hover img {
+        .project-container a:hover img {
             transform: scale(1.08);
         }
     }
