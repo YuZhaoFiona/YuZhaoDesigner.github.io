@@ -343,4 +343,7 @@ iframe {
     #footer-links {
         gap: 32px;
     }
+    main {
+        gap: 160px;
+    }
 }
