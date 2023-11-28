@@ -85,23 +85,19 @@
             padding: 60px 80px;
             gap: 60px;
         }
-        .project-thumbnail {
-            max-width: 50%;
+        .project-container a {
+            flex-basis: 60%;
         }
         .project-summary {
-            flex-grow: 1;
+            flex-basis: 40%;
         }
-        .image-container {
-            overflow: hidden;
-        }
-        .image-container img {
+        .project-thumbnail img {
             display: block;
-            width: 100%;
             height: auto;
             transition: transform 800ms ease-in-out;
             will-change: transform;
         }
-        .image-container:hover img {
+        .project-thumbnail:hover img {
             transform: scale(1.08);
         }
     }
@@ -119,11 +115,11 @@
         .project-container {
             gap: 120px;
         }
-        .project-thumbnail {
-            max-width: 600px;
-        }
         .project-summary {
             flex-grow: 1;
+            max-width: 600px;
+        }
+        .project-thumbnail {
             max-width: 600px;
         }
     }
