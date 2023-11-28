@@ -13,9 +13,11 @@
     <script type="text/javascript" src="./js/base.js"></script>
     <script type="text/javascript" src="./js/navigation.js"></script>
     <script src="https://kit.fontawesome.com/feb1c1eebe.js" crossorigin="anonymous"></script>
-    <script type="module" src="https://unpkg.com/@splinetool/viewer@0.9.311/build/spline-viewer.js"></script>
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@0.9.508/build/spline-viewer.js"></script>
     <title>Yu Zhao Portfolio</title>
 </head>
+
+
 
 <body>
 
@@ -24,7 +26,7 @@
         <ul id="menu">
             <li class="menu-item"><a id="current" href="index.html">Projects</a></li>
             <li class="menu-item"><a href="about.html">About</a></li>
-            <li class="menu-item"><a href="contact.html">Contact</a></li>
+            <li class="menu-item"><a href="mailto: yuzhao.design@gmail.com" target=”_blank” attribute>Contact</a></li>
         </ul>
         <img id="linkedin" src="./img/linkedin-icon.png" />
         <i id="nav-icon" class="fa-solid fa-2x fa-bars"></i>
@@ -45,9 +47,17 @@
             <div id="animated-hero">
                 <spline-viewer url="https://prod.spline.design/RVb3F0fPF7FbGqSQ/scene.splinecode"></spline-viewer>
             </div>
+
         </div>
+
+        <!-- <div class="scroll">
+            <i class="fa fa-angle-down"></i>
+        </div> -->
+
         <div class="project-container">
-            <img class="project-thumbnail" src="./img/cragging_thumbnail.jpg">
+
+            <a class="image-container" href="cragging-day.html"><img class="project-thumbnail" src="./img/cragging_thumbnail.jpg">
+            </a>
             <div class="project-summary">
                 <div class="project-title">Cragging Day</div>
                 <div class="text-container">
@@ -59,7 +69,7 @@
         </div>
 
         <div class="project-container">
-            <img class="project-thumbnail" src="./img/valuespend_thumbnail.jpg">
+            <a class="image-container" href="#"><img class="project-thumbnail" src="./img/valuespend_thumbnail.jpg"></a>
             <div class="project-summary">
                 <div class="project-title">ValueSpends</div>
                 <div class="text-container">
@@ -71,7 +81,7 @@
         </div>
 
         <div class="project-container">
-            <img class="project-thumbnail" src="./img/pasc_thumbnail.jpg">
+            <a class="image-container" href="#"><img class="project-thumbnail" src="./img/pasc_thumbnail.jpg"></a>
             <div class="project-summary">
                 <div class="project-title">PASC (Pan Asian Screen Collective)</div>
                 <div class="text-container">
@@ -98,5 +108,6 @@
         </div>
         <div id="footer-end">MADE WITH LOVE © 2023 YUZHAO PORTFOLIO</div>
     </footer>
+
 
 </html>
