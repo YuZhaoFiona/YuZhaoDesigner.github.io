@@ -301,7 +301,7 @@ iframe {
         border-radius: 100px;
     }
     iframe {
-        margin: 40px;
+        margin: 24px 40px;
     }
 }
 
@@ -321,6 +321,9 @@ iframe {
     }
     #footer-end {
         margin-top: 80px;
+    }
+    iframe {
+        margin: 24px 80px;
     }
 }
 

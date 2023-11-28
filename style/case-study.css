@@ -117,6 +117,18 @@ section {
     }
 }
 
-@media screen and (min-width: 992px) {}
+@media screen and (min-width: 992px) {
+    .project-item,
+    .project-overview {
+        padding: 24px 80px;
+    }
+    .tinted-wrapper,
+    .links {
+        padding: 80px;
+    }
+    .item-title {
+        font-size: 2rem;
+    }
+}
 
 @media screen and (min-width: 1200px) {}
