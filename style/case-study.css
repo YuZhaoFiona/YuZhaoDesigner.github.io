@@ -14,11 +14,23 @@
     height: auto;
 }
 
+.rounded-asset {
+    border-radius: 20px;
+}
+
 .project-item {
     display: flex;
     flex-direction: column;
-    padding: 24px;
+    padding: 80px 24px 24px 24px;
     gap: 24px;
+}
+
+.project-item.low-padding {
+    padding: 24px;
+}
+
+.high-margin {
+    margin-top: 80px;
 }
 
 .item-title {
@@ -27,6 +39,10 @@
     font-family: Montserrat;
     font-weight: 600;
     width: auto;
+}
+
+.item-title.small {
+    font-size: 1.125rem;
 }
 
 .media-container {
