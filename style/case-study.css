@@ -37,6 +37,15 @@
     font-size: 1.125rem;
 }
 
+.item-title.semi-bold {
+    font-size: 1.125rem;
+    font-weight: 400;
+}
+
+.item-title.large {
+    font-size: 1.75rem;
+}
+
 .media-container {
     width: 100%;
     justify-content: center;
@@ -63,4 +72,30 @@
     display: flex;
     flex-direction: column;
     gap: 24px;
+}
+
+.round-link {
+    border-radius: 100px;
+    border: 1.6px var(--Primary_green) solid;
+    border-color: var(Primary_green);
+    color: var(Primary_green);
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 1.125rem;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.round-link:hover {
+    color: var(--Primary_warm_white);
+    background-color: var(--Primary_green);
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    padding: 48px 24px 80px 24px;
 }
