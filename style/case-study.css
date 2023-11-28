@@ -1,3 +1,7 @@
+section {
+    width: 100%;
+}
+
 .tinted-content {
     background-color: var(--Secondary_yellow);
     width: 100%;
@@ -77,8 +81,8 @@
 .round-link {
     border-radius: 100px;
     border: 1.6px var(--Primary_green) solid;
-    border-color: var(Primary_green);
-    color: var(Primary_green);
+    border-color: var(--Primary_green);
+    color: var(--Primary_green);
     font-family: Montserrat;
     font-weight: 600;
     font-size: 1.125rem;
@@ -99,3 +103,20 @@
     justify-content: space-between;
     padding: 48px 24px 80px 24px;
 }
+
+@media screen and (min-width: 768px) {
+    .project-item,
+    .project-overview {
+        padding: 24px 40px;
+    }
+    .tinted-wrapper {
+        padding: 40px;
+    }
+    .links {
+        padding: 48px 40px 80px 40px;
+    }
+}
+
+@media screen and (min-width: 992px) {}
+
+@media screen and (min-width: 1200px) {}

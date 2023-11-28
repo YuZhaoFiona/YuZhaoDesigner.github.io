@@ -100,7 +100,7 @@ main {
     height: 40px;
 }
 
-a:link {
+a {
     text-decoration: none;
 }
 
@@ -299,6 +299,9 @@ iframe {
     .button {
         font-size: 1.25rem;
         border-radius: 100px;
+    }
+    iframe {
+        margin: 40px;
     }
 }
 
