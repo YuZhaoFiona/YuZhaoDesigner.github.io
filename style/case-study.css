@@ -1,9 +1,10 @@
-section {
+section,
+.section-wrapper {
     width: 100%;
 }
 
 .tinted-content {
-    background-color: var(--Secondary_yellow);
+    background-color: var(--project-color);
     width: 100%;
 }
 
@@ -171,6 +172,5 @@ section {
     }
     .end-section {
         flex-direction: column;
-        width: 1200px;
     }
 }
