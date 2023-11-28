@@ -3,16 +3,8 @@
     width: 100%;
 }
 
-.tinted-wrapper {
-    padding: 48px 24px;
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-}
-
 .hero-container {
     display: flex;
-    align-items: center;
     justify-content: center;
     padding: 12px 0;
 }
@@ -37,6 +29,12 @@
     width: auto;
 }
 
+.media-container {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+}
+
 .project-overview {
     display: flex;
     flex-direction: column;
@@ -52,8 +50,9 @@
     font-weight: 600;
 }
 
-.media-container {
-    width: 100%;
-    justify-content: center;
+.tinted-wrapper {
+    padding: 24px;
     display: flex;
+    flex-direction: column;
+    gap: 24px;
 }
