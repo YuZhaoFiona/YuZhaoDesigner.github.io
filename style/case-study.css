@@ -22,7 +22,8 @@ section {
     border-radius: 20px;
 }
 
-.project-item {
+.project-item,
+.end-section {
     display: flex;
     flex-direction: column;
     padding: 24px;
@@ -105,6 +106,7 @@ section {
 }
 
 @media screen and (min-width: 768px) {
+    .end-section,
     .project-item,
     .project-overview {
         padding: 24px 40px;
@@ -118,6 +120,7 @@ section {
 }
 
 @media screen and (min-width: 992px) {
+    .end-section,
     .project-item,
     .project-overview {
         padding: 24px 80px;
@@ -131,4 +134,43 @@ section {
     }
 }
 
-@media screen and (min-width: 1200px) {}
+@media screen and (min-width: 1200px) {
+    section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .hero-container .asset {
+        max-width: 800px;
+    }
+    .project-item {
+        flex-direction: row;
+    }
+    .item-title {
+        flex-basis: 35%;
+    }
+    .text-container {
+        flex-basis: 65%;
+    }
+    .project-overview {
+        gap: 80px;
+        align-self: center;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+    .section-wrapper {
+        max-width: 1200px;
+    }
+    .tinted-content {
+        display: flex;
+        justify-content: center;
+    }
+    .tinted-wrapper {
+        gap: 48px;
+        padding: 80px;
+    }
+    .end-section {
+        flex-direction: column;
+        width: 1200px;
+    }
+}
