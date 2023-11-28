@@ -21,16 +21,8 @@
 .project-item {
     display: flex;
     flex-direction: column;
-    padding: 80px 24px 24px 24px;
-    gap: 24px;
-}
-
-.project-item.low-padding {
     padding: 24px;
-}
-
-.high-margin {
-    margin-top: 80px;
+    gap: 24px;
 }
 
 .item-title {

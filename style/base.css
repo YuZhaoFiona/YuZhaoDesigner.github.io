@@ -93,6 +93,7 @@ main {
     align-items: center;
     position: relative;
     z-index: 2;
+    gap: 80px;
 }
 
 #logo {
