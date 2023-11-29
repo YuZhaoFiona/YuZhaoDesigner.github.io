@@ -1,0 +1,239 @@
+section,
+.section-wrapper {
+    width: 100%;
+}
+
+.tinted-content {
+    background-color: var(--project-color);
+    width: 100%;
+}
+
+.hero-container {
+    display: flex;
+    justify-content: center;
+    padding: 12px 0;
+}
+
+.asset {
+    max-width: 100%;
+    height: auto;
+}
+
+.rounded-asset {
+    border-radius: 20px;
+}
+
+.project-item,
+.end-section {
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    gap: 24px;
+}
+
+.item-title {
+    color: var(--Primary_black);
+    font-size: 1.5rem;
+    font-family: Montserrat;
+    font-weight: 600;
+    width: auto;
+}
+
+.item-title.small {
+    font-size: 1.125rem;
+}
+
+.item-title.semi-bold {
+    font-size: 1.125rem;
+    font-weight: 400;
+}
+
+.item-title.large {
+    font-size: 1.75rem;
+}
+
+.text-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.media-container {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+}
+
+.project-overview {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    padding: 24px;
+    gap: 16px;
+}
+
+.overview-item-title {
+    color: var(--Primary_black);
+    font-size: 1.25rem;
+    font-family: Montserrat;
+    font-weight: 600;
+}
+
+.tinted-wrapper,
+.process-wrapper {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.round-link {
+    border-radius: 100px;
+    border: 1.6px var(--Primary_green) solid;
+    border-color: var(--Primary_green);
+    color: var(--Primary_green);
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 1.125rem;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.round-link:hover {
+    color: var(--Primary_warm_white);
+    background-color: var(--Primary_green);
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    padding: 48px 24px 80px 24px;
+}
+
+.two-colum-list {
+    align-self: center;
+    flex-basis: 50%;
+}
+
+.li-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding-top: 16px;
+}
+
+@media screen and (min-width: 768px) {
+    .end-section,
+    .project-item,
+    .project-overview {
+        padding: 24px 40px;
+    }
+    .tinted-wrapper,
+    .process-wrapper {
+        padding: 40px;
+    }
+    .links {
+        padding: 48px 40px 80px 40px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .end-section,
+    .project-item,
+    .project-overview {
+        padding: 24px 80px;
+    }
+    .process-wrapper,
+    .links {
+        padding: 80px;
+    }
+    .item-title {
+        font-size: 1.75rem;
+    }
+    section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .hero-container .asset {
+        max-width: 600px;
+    }
+    .project-item,
+    .tinted-wrapper {
+        flex-direction: row;
+    }
+    .item-title {
+        flex-basis: 35%;
+    }
+    .text-container {
+        flex-basis: 65%;
+    }
+    .project-overview {
+        gap: 80px;
+        align-self: center;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+    .section-wrapper {
+        max-width: 992px;
+    }
+    .tinted-content {
+        display: flex;
+        justify-content: center;
+    }
+    .tinted-wrapper,
+    .process-wrapper {
+        gap: 48px;
+        padding: 80px;
+    }
+    .end-section {
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .item-title {
+        font-size: 2rem;
+    }
+    /* section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    } */
+    .hero-container .asset {
+        max-width: 800px;
+    }
+    /* .project-item,
+    .tinted-wrapper {
+        flex-direction: row;
+    }
+    .item-title {
+        flex-basis: 35%;
+    }
+    .text-container {
+        flex-basis: 65%;
+    }
+    .project-overview {
+        gap: 80px;
+        align-self: center;
+        flex-direction: row;
+        justify-content: flex-start;
+    } */
+    .section-wrapper {
+        max-width: 1200px;
+    }
+    /* .tinted-content {
+        display: flex;
+        justify-content: center;
+    }
+    .tinted-wrapper {
+        gap: 48px;
+        padding: 80px;
+    }
+    .end-section {
+        flex-direction: column;
+    } */
+}

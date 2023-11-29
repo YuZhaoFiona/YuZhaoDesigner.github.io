@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./style/base.css" rel="stylesheet" />
+    <link href="./style/projects.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@400;500;600&family=Montserrat:wght@300;500;600&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="./js/base.js"></script>
+    <script type="text/javascript" src="./js/navigation.js"></script>
+    <script src="https://kit.fontawesome.com/feb1c1eebe.js" crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@0.9.510/build/spline-viewer.js"></script>
+    <title>Yu Zhao Portfolio</title>
+</head>
+
+
+
+<body>
+
+    <header>
+        <a href="index.html"><img id="logo" src="./img/logo.png" /></a>
+        <ul id="menu">
+            <li class="menu-item"><a id="current" href="index.html">Projects</a></li>
+            <li class="menu-item"><a href="about.html">About</a></li>
+            <li class="menu-item"><a href="mailto: yuzhao.design@gmail.com" target=”_blank” attribute>Contact</a></li>
+        </ul>
+        <a href="https://www.linkedin.com/in/yu-zhao-designer/" target="_blank"><img id="linkedin" src="./img/linkedin-icon.png" /></a>
+        <i id="nav-icon" class="fa-solid fa-2x fa-bars"></i>
+    </header>
+
+    <ul id="menu-mobile" class="nav-closed">
+        <li><a href="index.html">Projects</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="mailto: yuzhao.design@gmail.com" target=”_blank”>Contact</a></li>
+    </ul>
+
+    <main>
+        <div id="hero-section">
+            <div id="hero-text">
+                <h1>Hey, I am Yu! <br> UX/UI Designer.</h1>
+                <p> Crafting experiences that captivate. Balancing user needs and business goals. Let's design a world where every detail matters!</p>
+            </div>
+            <div id="animated-hero">
+                <spline-viewer url="https://prod.spline.design/RVb3F0fPF7FbGqSQ/scene.splinecode"></spline-viewer>
+            </div>
+
+        </div>
+
+        <!-- <div class="scroll">
+            <i class="fa fa-angle-down"></i>
+        </div> -->
+
+        <div class="project-container">
+
+            <a href="cragging-day.html"><img class="project-thumbnail" src="./img/cragging_thumbnail.jpg">
+            </a>
+            <div class="project-summary">
+                <div class="project-title">Cragging Day</div>
+                <div class="text-container">
+                    <p class="project-description">Cragging Day is an innovative application that serves as a bridge between traveling climbers and local enthusiasts, facilitating the seamless sharing of gear, local climbing knowledge, and cultural experiences.</p>
+                    <p class="project-description">Empowering climbers to explore the world and build a thriving global climbing community.</p>
+                </div>
+                <a class="button primary-button" href="cragging-day.html">View Case Study</a>
+            </div>
+        </div>
+
+        <div class="project-container">
+            <a href="valuespends.html"><img class="project-thumbnail" src="./img/valuespend_thumbnail.jpg"></a>
+            <div class="project-summary">
+                <div class="project-title">ValueSpends</div>
+                <div class="text-container">
+                    <p class="project-description">Designed an app that helps users make meaningful and intentional spending decisions by reducing impulse buying.</p>
+                    <p class="project-description">By guiding users to invest their money in things that align with their values, the app encourages a minimalist lifestyle and emphasises the importance of prioritising what truly matters.</p>
+                </div>
+                <a class="button primary-button" href="valuespends.html">View Case Study</a>
+            </div>
+        </div>
+
+        <div class="project-container">
+            <a href="pasc.html"><img class="project-thumbnail" src="./img/pasc_thumbnail.jpg"></a>
+            <div class="project-summary">
+                <div class="project-title">PASC (Pan Asian Screen Collective)</div>
+                <div class="text-container">
+                    <p class="project-description">As part of a school team project, a group of 5 members worked collaboratively to rebrand and redesign the website for the client PASC (Pan Asian Screen Collective).</p>
+                    <p class="project-description">By guiding users to invest their money in things that align with their values, the app encourages a minimalist lifestyle and emphasises the importance of prioritising what truly matters.</p>
+                </div>
+                <a class="button primary-button" href="pasc.html">View Case Study</a>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <div id="footer-main">
+            <div id="footer-contact">
+                <div id="footer-title"><span>Let's design </span><span class="bold">together!</span></div>
+                <div id="footer-location">Based in Auckland, New Zealand</div>
+                <div id="footer-links">
+                    <a class="button secondary-button" href="mailto:yuzhao.design@gmail.com" target="_blank">Email me</a>
+                    <a class="button secondary-button" href="https://www.linkedin.com/in/yu-zhao-designer/" target="_blank">Let's chat on LinkedIn</a>
+                </div>
+            </div>
+
+            <img id="footer-logo" src="./img/footer-logo.png" />
+        </div>
+        <div id="footer-end">MADE WITH LOVE © 2023 YUZHAO PORTFOLIO</div>
+
+    </footer>
+
+    <!-- <div class="cursor"></div> -->
+
+</body>
+
+</html>
