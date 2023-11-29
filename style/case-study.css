@@ -52,6 +52,12 @@ section,
     font-size: 1.75rem;
 }
 
+.text-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
 .media-container {
     width: 100%;
     justify-content: center;
@@ -73,7 +79,8 @@ section,
     font-weight: 600;
 }
 
-.tinted-wrapper {
+.tinted-wrapper,
+.process-wrapper {
     padding: 24px;
     display: flex;
     flex-direction: column;
@@ -106,13 +113,26 @@ section,
     padding: 48px 24px 80px 24px;
 }
 
+.two-colum-list {
+    align-self: center;
+    flex-basis: 50%;
+}
+
+.li-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding-top: 16px;
+}
+
 @media screen and (min-width: 768px) {
     .end-section,
     .project-item,
     .project-overview {
         padding: 24px 40px;
     }
-    .tinted-wrapper {
+    .tinted-wrapper,
+    .process-wrapper {
         padding: 40px;
     }
     .links {
@@ -126,25 +146,23 @@ section,
     .project-overview {
         padding: 24px 80px;
     }
-    .tinted-wrapper,
+    .process-wrapper,
     .links {
         padding: 80px;
     }
     .item-title {
-        font-size: 2rem;
+        font-size: 1.75rem;
     }
-}
-
-@media screen and (min-width: 1200px) {
     section {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
     .hero-container .asset {
-        max-width: 800px;
+        max-width: 600px;
     }
-    .project-item {
+    .project-item,
+    .tinted-wrapper {
         flex-direction: row;
     }
     .item-title {
@@ -160,9 +178,54 @@ section,
         justify-content: flex-start;
     }
     .section-wrapper {
-        max-width: 1200px;
+        max-width: 992px;
     }
     .tinted-content {
+        display: flex;
+        justify-content: center;
+    }
+    .tinted-wrapper,
+    .process-wrapper {
+        gap: 48px;
+        padding: 80px;
+    }
+    .end-section {
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .item-title {
+        font-size: 2rem;
+    }
+    /* section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    } */
+    .hero-container .asset {
+        max-width: 800px;
+    }
+    /* .project-item,
+    .tinted-wrapper {
+        flex-direction: row;
+    }
+    .item-title {
+        flex-basis: 35%;
+    }
+    .text-container {
+        flex-basis: 65%;
+    }
+    .project-overview {
+        gap: 80px;
+        align-self: center;
+        flex-direction: row;
+        justify-content: flex-start;
+    } */
+    .section-wrapper {
+        max-width: 1200px;
+    }
+    /* .tinted-content {
         display: flex;
         justify-content: center;
     }
@@ -172,5 +235,5 @@ section,
     }
     .end-section {
         flex-direction: column;
-    }
+    } */
 }

@@ -3,6 +3,7 @@
     padding: 0;
     font-family: 'Hind Madurai', sans-serif;
     line-height: 150%;
+    /* cursor: none; */
     /* outline: 1px solid red; */
 }
 
@@ -24,6 +25,17 @@ ul {
     --Secondary_grey: #696969;
 }
 
+
+/* .cursor {
+    pointer-events: none;
+    position: fixed;
+    padding: 1rem;
+    background-color: #d6a3cf;
+    border-radius: 50%;
+    mix-blend-mode: exclusion;
+    transition: transform 0.3s ease;
+} */
+
 h1,
 h2,
 h3 {
@@ -36,6 +48,10 @@ p {
     font-family: Hind Madurai;
     font-weight: 400;
     word-wrap: break-word
+}
+
+.small-p {
+    font-size: 1rem;
 }
 
 #linkedin {
@@ -218,6 +234,16 @@ iframe {
     margin: 24px;
     height: auto;
     aspect-ratio: 1.78;
+    border-radius: 20px;
+}
+
+.framborder {
+    border: 1.6px var(--project-color) solid;
+}
+
+.text-link {
+    color: var(--Primary_green);
+    font-weight: 600;
 }
 
 
@@ -302,6 +328,49 @@ iframe {
     }
     iframe {
         margin: 24px 40px;
+    }
+    /* scrolling down animation */
+    .scroll {
+        width: 36px;
+        height: 58px;
+        border: 2px solid var(--Primary_green);
+        border-radius: 20px;
+        margin: 0 auto;
+    }
+    .fa {
+        color: var(--Primary_green);
+        text-align: center;
+        font-size: 1.6em;
+        width: 100%;
+        position: relative;
+        top: 0px;
+        -webkit-animation: mymove 4s infinite;
+        /* Chrome, Safari, Opera */
+        animation: mymove 4s infinite;
+    }
+    /* Chrome, Safari, Opera */
+    @-webkit-keyframes mymove {
+        0% {
+            top: 0px;
+        }
+        50% {
+            top: 30px;
+        }
+        100% {
+            top: 0px;
+        }
+    }
+    /* Standard syntax */
+    @keyframes mymove {
+        0% {
+            top: 0px;
+        }
+        50% {
+            top: 30px;
+        }
+        100% {
+            top: 0px;
+        }
     }
 }
 
