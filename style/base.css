@@ -24,16 +24,16 @@ ul {
     --Secondary_grey: #696969;
 }
 
-
-/* .cursor {
+.cursor {
     pointer-events: none;
     position: fixed;
     padding: 1rem;
     background-color: #d6a3cf;
     border-radius: 50%;
     mix-blend-mode: exclusion;
+    z-index: 5;
     transition: transform 0.3s ease;
-} */
+}
 
 h1,
 h2,
@@ -347,6 +347,9 @@ iframe {
         /* Chrome, Safari, Opera */
         animation: mymove 4s infinite;
     }
+    .link-grow {
+        transform: translate(-50%, -50%) scale(4);
+    }
     /* Chrome, Safari, Opera */
     @-webkit-keyframes mymove {
         0% {
@@ -370,6 +373,9 @@ iframe {
         100% {
             top: 0px;
         }
+    }
+    .hover-this {
+        transition: all 0.3s ease;
     }
 }
 

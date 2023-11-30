@@ -24,6 +24,8 @@ document.addEventListener('DOMContentLoaded', function() {
     if (window.innerWidth >= 768) {
         headerAnimation(0.5, 'header');
         footerAnimation(-0.5, 'footer', distanceToBottom);
+        setCursor();
+        setLinks();
     }
 });
 
@@ -80,3 +82,40 @@ function footerAnimation(rate, selector, func) {
         element.style.transform = `translateY( ${rate * func()}px)`;
     });
 }
+
+
+/**
+ * CURSOR
+ */
+
+function setCursor() {
+
+    const cursor = document.querySelector('.cursor');
+
+    const editCursor = e => {
+        const { clientX: x, clientY: y } = e;
+        cursor.style.left = x + 'px';
+        cursor.style.top = y + 'px';
+    };
+
+    window.addEventListener('mousemove', editCursor);
+
+}
+
+function setLinks() {
+
+
+    let mouseCursor = document.querySelector('.cursor');
+    let links = document.querySelectorAll('.hover-this');
+
+    links.forEach(link => {
+        link.addEventListener("mouseleave", () => {
+            mouseCursor.classList.remove("link-grow");
+        });
+
+        link.addEventListener("mouseover", () => {
+            mouseCursor.classList.add("link-grow");
+        });
+    });
+
+};
