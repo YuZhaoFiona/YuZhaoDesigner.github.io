@@ -62,7 +62,8 @@ function headerAnimation(rate, selector) {
         }
 
         translation = window.scrollY - translationChange;
-        element.style.transform = `translateY( ${translation}px)`;
+        const menu = document.getElementById("menu");
+        menu.style.transform = `translateY( ${translation}px)`;
 
     });
 }
