@@ -12,6 +12,7 @@
     
     #animated-hero {
         display: flex;
+        /* aspect-ratio: 0.1; */
     }
     
     #hero-text {
@@ -70,7 +71,7 @@
         #hero-section {
             flex-direction: row;
             padding: 0 80px;
-            max-height: 80vh;
+            height: 80vh;
         }
         #hero-text {
             flex-basis: 30%;

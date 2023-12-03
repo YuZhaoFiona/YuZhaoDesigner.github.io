@@ -3,8 +3,8 @@
     padding: 0;
     font-family: 'Hind Madurai', sans-serif;
     line-height: 150%;
-    /* cursor: none; */
     /* outline: 1px solid red; */
+    cursor: none;
 }
 
 body,
@@ -364,7 +364,7 @@ iframe {
         pointer-events: none;
         position: fixed;
         padding: 1rem;
-        background-color: #d6a3cf;
+        background-color: #d9c7d5;
         border-radius: 50%;
         mix-blend-mode: exclusion;
         z-index: 5;
